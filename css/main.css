@@ -14,6 +14,7 @@
   --justify_content: center;
   --display: flex;
   --_fDirection: row;
+  --fDirectionColumn: column;
 }
 
 *{
@@ -28,9 +29,16 @@ body {
   display: var(--display); ;
   flex-direction: var(--_fDirection);
   }
+/*work in progress*/
+.signup {
+  display: var(--display);
+  flex-direction: var(--fDirectionColumn);
+  align-items: var(--align_items);
+  justify-content: var(--justify_content);
+  }
 
 h1 {
-  font-size: var(;
+  font-size: var( --f-Header);
   }
 
 label{
@@ -49,15 +57,15 @@ label input{
  Here you can work with the sign up form styles.
  */
 #sform {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  display:  var(--display);
+  flex-direction: var(--_fDirection);
+  align-items:  var(--align_items);
+  justify-content: var(--justify_content);
   }
 ul{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+  display: var(--display);
+  flex-direction: var(--_fDirection);
+  justify-content: var(--justify_content);
   list-style: none;
   padding: 0;
   }
@@ -81,8 +89,8 @@ ul li {gap: 1em;}
 /* this is the <Sign Up> text styling */
 
 .a {
-  color: snow;
-  text-decoration: none;
+  color: var(--white);
+  text-decoration:  none;
   font-size: 10pt;
   }
 
@@ -94,13 +102,13 @@ ul li {gap: 1em;}
   width: 68px;
   height: 68px;
   padding: 10px;
-  background: #fff;
+  background: white;
   border: 1px solid rgba(0, 0, 0, 0.3);
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 1px rgba(0, 0, 0, 0.14);
   }
 
 
-
+/*not working as of now*/
 button.circle > a > img {
   color: aqua;
   width: 24px;
@@ -111,7 +119,6 @@ button.circle > a > img {
 
 
 img {
-  padding-top: 150px;
   width: 400pt;
   height: 400pt;
   }
