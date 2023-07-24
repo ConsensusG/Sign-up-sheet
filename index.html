@@ -1,10 +1,9 @@
 <!doctype html>
 <html class="no-js" lang="en">
-
 <head>
   <meta charset="utf-8">
   <title>Sign Up</title>
-  <meta content="" name="description">
+  <meta content="" name="Sign up page">
   <meta content="width=device-width, initial-scale=1" name="viewport">
 
   <meta content="" property="og:title">
@@ -12,54 +11,98 @@
   <meta content="" property="og:url">
   <meta content="" property="og:image">
 
-  <link href="site.webmanifest" rel="manifest">
-  <link href="icon.png" rel="apple-touch-icon">
-  <link href="css/main.css" rel="stylesheet">
-
-  <meta content="#fafafa" name="theme-color">
+  <link href="style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto:wght@500&display=swap"
+        rel="stylesheet">
 </head>
-
 <body>
-<section>
+<div class="container">
   <div class="signup">
     <h1>Sign Up</h1>
-    <form class="signup-form" id="sform">
-      <div class="me_labels">
-        <label>
-          <input placeholder="" type="text">
-        </label>
-        <label>
-          <input placeholder="" type="text">
-        </label>
-        <label>
-          <input placeholder="" type="text">
-        </label>
-      </div>
 
-      <button id="sbutton" type="button"><a class="a" href="index.html">Sign Up</a></button>
-      <p class="p">Or Sign up with social platforms</p>
-      <div class="social">
-        <ul>
-          <li>
-            <button class="circle" type="button"><a
-              href="https://www.facebook.com/"><img alt="facebook icon" src="img/Path%20151.png"></a></button>
-          </li>
-
-          <li>
-            <button class="circle" type="button"><a href="https://www.twitter.com/">TW</a></button>
-          </li>
-          <li>
-            <button class="circle" type="button"><a href="https://www.google.com/">GO</a></button>
-          </li>
-          <li>
-            <button class="circle" type="button"><a href="https://www.indeed.com/">IN</a></button>
-          </li>
-        </ul>
-      </div>
-    </form>
   </div>
 
-</section>
-<img id= "branding" alt= "branding image" src="img/Group%2010@2x.png">
+
+  <form class="signup-form" id="sform">
+    <div class="me_labels">
+      <img alt="" class="place_icon" src="./img/user_logo.png">
+      <label>
+        <input placeholder="" type="text">
+      </label>
+    </div>
+    <div class="me_labels">
+      <img alt="" class="place_icon" src="./img/email_logo.png">
+      <label>
+        <input placeholder="" type="text"/>
+      </label>
+    </div>
+    <div class="me_labels">
+      <img alt="" class="place_icon" src="./img/lock_logo.png">
+      <label>
+        <input placeholder="" type="text"/>
+      </label>
+    </div>
+  </form>
+
+  <button class="sbutton" type="button"><a class="a" href="index.html">Sign Up</a></button>
+  <p class="p">Or Sign up with social platforms</p>
+
+
+  <div class="social">
+    <div class="icon">
+      <button class="presentation-button"><a
+        href="https://www.facebook.com/"><img alt="facebook icon" class="img" id="fb"
+                                              src="img/Path%20151.png"></a></button>
+      <div class="presentation-card">
+        <i class="icon fas fa-info-circle"></i>
+        <h2>Facebook</h2>
+        <p>Feel free to contact me on Facebook.</p>
+        <a href="https://www.facebook.com/">Personal message</a>
+      </div>
+    </div>
+    <div class="icon">
+      <button class="presentation-button"><a
+        href="https://https://twitter.com/"><img alt="twitter icon" class="img" id="twr"
+                                                 src="img/Path%20152.png"></a></button>
+      <div class="presentation-card">
+        <i class="icon fas fa-info-circle"></i>
+        <h2>Twitter</h2>
+        <p>Feel free to contact me on Twitter.</p>
+        <a href="https://twitter.com  /">Personal message</a>
+      </div>
+    </div>
+    <div class="icon">
+      <button class="presentation-button"><a
+        href="https://www.plus.google.com/"><img alt="linkedin icon" class="img" id="google"
+                                                 src="img/icons8-google.svg"></a></button>
+      <div class="presentation-card">
+        <i class="icon fas fa-info-circle"></i>
+        <h2>Google</h2>
+        <p>Feel free to contact me on Google.</p>
+        <a href="https://www.plus.google.com/">Personal message</a>
+      </div>
+    </div>
+    <div class="icon">
+      <button class="presentation-button"><a
+        href="https://www.linkedin.com/"><img alt="linkedin icon" class="img" id="lnk"
+                                              src="img/linkedin.svg"></a></button>
+      <div class="presentation-card">
+        <i class="icon fas fa-info-circle"></i>
+        <h2>Linkedin</h2>
+        <p>Feel free to contact me on LinkedIn.</p>
+        <a href="https://www.linkedin.com/">Personal message</a>
+      </div>
+    </div>
+  </div>
+
+
+</div>
+
+
+<div class="branding">
+  <img alt="branding image" id="branding" src="img/Group%2010@2x.png">
+</div>
+
+
 </body>
 </html>

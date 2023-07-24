@@ -1,0 +1,218 @@
+* {
+  font-family: "Roboto Thin", sans-serif;
+  max-width: 90vw;
+  max-height: 90vh;
+  }
+
+body {
+  display: grid;
+  margin: 5%;
+  padding: -50px;
+  grid-template-columns: 1fr 1fr;
+  }
+
+.container {
+  display: grid;
+  justify-content: center;
+  margin: 0 auto;
+  justify-items: center;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  }
+
+.signup {
+  font-size: 22px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  }
+
+.signup-form {
+  line-height: 8rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  }
+
+
+.me_labels {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  }
+
+
+.me_labels .place_icon {
+  position: absolute;
+  left: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  }
+
+.container input {
+  line-height: 60px;
+  width: 250px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 50px;
+  }
+
+input {
+  font-size: 20px;
+  max-width: 200pt;
+  padding: 0 60px;
+  }
+
+button.sbutton {
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: 50px;
+  margin: auto;
+  border: none;
+  border-radius: 45px;
+  background-color: #364ef6;
+  justify-items: center;
+  }
+
+.a {
+  font-size: 24px;
+  font-weight: 300;
+  text-decoration: none;
+  color: white;
+  }
+
+.p {
+  font-size: 12pt;
+  margin-top: auto;
+  margin-bottom: auto;
+  }
+
+
+.img#lnk {
+  width: 35px;
+  height: 40px;
+  margin-right: auto;
+
+  margin-bottom: auto;
+  }
+
+.social {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 85%;
+  height: 100%;
+  margin-bottom: 118px;
+  }
+
+.social .icon {
+  justify-content: center;
+  margin-bottom: auto;
+  }
+
+.circle {
+  position: relative;
+  display: grid;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  width: 55px;
+  height: 55px;
+  margin-top: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  border-radius: 50%;
+  background-color: white;
+  }
+
+.img {
+  width: 30px;
+  height: 30px;
+  }
+
+.img#fb {
+  width: 20px;
+  height: 30px;
+  }
+
+.img#google {
+  width: 50px;
+  height: 50px;
+  }
+
+
+.branding {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  }
+
+.branding > img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  height: 600px;
+
+  }
+
+/* Style the button */
+.presentation-button {
+  width: 55px;
+  height: 55px;
+  transition: background-color 0.3s ease;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  border-radius: 50%;
+  background-color: white;
+  }
+
+button.presentation-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  }
+
+.presentation-button:hover {
+  z-index: 2;
+  background-color: #0056b3;
+  }
+
+/* Style the presentation card */
+.presentation-card {
+  display: none;
+  width: 300px;
+  height: 300px;
+  text-align: center;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+  backdrop-filter: blur(.5rem);
+  }
+
+.presentation-card i {
+  font-size: 24px;
+  color: #007bff;
+  background-position: center;
+  }
+
+.presentation-button:hover + .presentation-card {
+  position: absolute;
+  z-index: 1;
+  top: -35vh;
+  left: auto;
+  display: block;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: auto;
+  background: linear-gradient(#0056b3, #fafafa, #007bff);
+  backdrop-filter: blur(3.4rem);
+
+  }

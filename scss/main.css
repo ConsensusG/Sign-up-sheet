@@ -1,9 +1,8 @@
-<!--
-@import   url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
-/* Legend */
--->
 
-/* </body>  <!-- body style is your global style in this case --> */
+@import   url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+
+
+
 :root {
   --font_family: "Poppins", sans-serif;
   --f-Header: 44px;
@@ -24,6 +23,10 @@
   margin: 0;
   font-family: var(--font_family);
   font-size: var(--font_size);
+  }
+
+html, body {
+  height: 100%;
   }
 
 body {
@@ -171,6 +174,7 @@ img {
   width: 100%;
   height: 500pt;
   }
+
 
 @media only screen and (max-width: 300px) {
   h1 {
