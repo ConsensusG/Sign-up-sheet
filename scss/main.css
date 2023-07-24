@@ -1,0 +1,206 @@
+
+@import   url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+
+
+
+:root {
+  --font_family: "Poppins", sans-serif;
+  --f-Header: 44px;
+  --line_wt: 1.5;
+  --font_w: 500;
+  --white: #fafafa;
+  --OutMargin: 60px;
+  --border: 1px solid rgba(0, 0, 0, 0.3);
+  --align_items: center;
+  --justify_content: center;
+  --display: flex;
+  --_fDirection: row;
+  --fDirectionColumn: column;
+  --font_size: 18px;
+  }
+
+* {
+  margin: 0;
+  font-family: var(--font_family);
+  font-size: var(--font_size);
+  }
+
+html, body {
+  height: 100%;
+  }
+
+body {
+  display: var(--display);
+  align-items: var(--align_items);
+  justify-content: var(--justify_content);
+  height: 100vh;
+  }
+
+section {
+  width: 30%;
+  display: var(--display);
+  align-items: var(--align_items);
+  flex-direction: column;
+  justify-content: var(--justify_content);
+  }
+
+/*work in progress*/
+.signup {
+  height: 80vh;
+  display: var(--display);
+  align-items: var(--align_items);
+  flex-direction: var(--fDirectionColumn);
+  justify-content: var(--justify_content);
+  }
+
+form#sform.signup-form {
+  display: var(--display);
+  align-items: var(--align_items);
+  flex-direction: var(--fDirectionColumn);
+  justify-content: var(--justify_content);
+  }
+
+div.me_labels {
+  display: var(--display);
+  align-items: var(--align_items);
+  flex-direction: var(--fDirectionColumn);
+  justify-content: var(--justify_content);
+  }
+
+h1 {
+  padding-bottom: 60pt;
+
+  font-family: var(--font_family);
+  font-size: var(--f-Header);
+  font-weight: var(--font_w);
+  text-align: center;
+  }
+
+label {
+  height:100px;
+  }
+
+label input {
+  width: 400px;
+  height: 50px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 25px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 1px rgba(0, 0, 0, 0.14);
+  }
+
+/*
+ Here you can work with the sign up form styles.
+ */
+#sform {
+  display: var(--display);
+  align-items: var(--align_items);
+  flex-direction: var(--_fDirection);
+  justify-content: var(--justify_content);
+  }
+
+ul {
+  display: var(--display);
+  flex-direction: var(--_fDirection);
+  justify-content: var(--justify_content);
+  padding: 0;
+  list-style: none;
+  }
+
+/*
+<!-- this is the Sign up  styling -->
+ */
+#sbutton {
+  margin-top: 20pt;
+  margin-bottom: 10pt;
+  display: inline-block;
+  width: 40%;
+  height: 50px;
+  cursor: pointer;
+  border: none;
+  border-radius: 50px;
+  background-color: #364ef6;
+  }
+
+.p {
+  font-family: var(--font_family);
+  font-weight: var(--font_w);
+  text-align: center;
+  padding-bottom: 40pt;
+  font-size: 10pt;
+  }
+/* this is the <Sign Up> text styling */
+
+.a {
+  font-family: var(--font_family);
+  font-weight: var(--font_w);
+  font-size: var(--font_size);
+  text-align: center;
+  text-decoration: none;
+  color: var(--white);
+  }
+
+/* you can add more styles here if you want, this is the
+circle button styling */
+
+.circle {
+  display: inline-block;
+  cursor: pointer;
+  width: 60px;
+  height: 60px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+  background: var(--white);
+  margin-left: 20px;
+  margin-right: 20px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 1px rgba(0, 0, 0, 0.14);
+  }
+
+/*not working as of now*/
+button.circle > a > img {
+  bottom: 0;
+  left: 2px;
+  width: 24px;
+  height: 24px;
+  }
+
+#branding {
+  display: var(--display);  /* this is the sign up styling */
+  align-items: var(--align_items);
+  justify-content: var(--justify_content);
+}
+
+img {
+  max-width: 500pt;
+  width: 100%;
+  height: 500pt;
+  }
+
+
+@media only screen and (max-width: 300px) {
+  h1 {
+    font-size: 12pt;
+    width: max-content;
+    text-wrap: none;
+    }
+  }
+
+@media only screen and (max-width: 450px) {
+  img {
+    max-width: 250pt;
+    max-height: 250pt;
+    }
+  }
+
+@media only screen and (max-width: 450px) {
+  img {
+    max-width: 350pt;
+    max-height: 350pt;
+    }
+  }
+
+@media only screen and (max-width: 300px) {
+  section img {
+    max-width: 250pt;
+    max-height: 250pt;
+    }
+  }
